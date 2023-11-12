@@ -1,0 +1,30 @@
+/* This code represents a CSS selector for all paragraph elements within a div with the class "container". */
+.dice {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(189, 3, 3);
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    animation-name: roll;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    75% {
+        transform: rotate(540deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
